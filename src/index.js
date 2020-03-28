@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     taskList.createNewTask(newTaskDescription.value);
     e.target.reset();
-    
+    renderApp()
     list.appendChild(newTaskDescription.value);
   });
   return list
