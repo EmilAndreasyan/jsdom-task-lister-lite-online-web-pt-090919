@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newTaskDescription = document.getElementById('new-task-description');
   const newTaskPriority = document.getElementById("new-task-priority");
   const list = document.getElementById('list');
+  const tasks = document.getElementById('tasks');
   
   const renderApp = () => (taskUl.innerHTML = taskList.renderTasks());
   
