@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     renderApp()
   });
   tasks.addEventListener('click', (e) => {
-    if (e.target.nodeName === "BUTTON")
+    if (e.target.nodeName === "BUTTON") {
+      taskList.deleteTask
+    }
   })
 });
