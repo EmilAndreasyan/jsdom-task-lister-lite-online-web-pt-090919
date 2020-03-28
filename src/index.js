@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
   createTaskForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    taskList.createNewTask(newTaskDescription.value)
+    taskList.createNewTask(newTaskDescription.value);
+    e.target.reset();
+    
     list.appendChild(newTaskDescription.value);
   });
   return list
