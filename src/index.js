@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const newTaskPriority = document.getElementById("new-task-priority");
   const list = document.getElementById('list');
   
+  const renderApp = () => (taskUl.innerHTML = taskList.renderTasks());
+  
   createTaskForm.addEventListener('submit', (e) => {
     e.preventDefault();
     list.appendChild(newTaskDescription.value);
