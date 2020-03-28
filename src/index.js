@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.reset();
     renderApp()
   });
-  tasks.addEventListener('click', () => {
-    
+  tasks.addEventListener('click', (e) => {
+    if (e === )
   })
 });
